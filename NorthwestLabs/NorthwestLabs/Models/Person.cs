@@ -5,7 +5,8 @@ using System.Web;
 
 namespace NorthwestLabs.Models
 {
-    public class Person
+    //this class is only for inheritance. These fields are shared by customer and employee, and could be used for others in the future
+    public abstract class Person
     {
         public String firstName; 
         public String lastName; 

@@ -287,15 +287,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\ProcessSummaryReport.cshtml" />
-    <Content Include="Views\Home\ProcessBills.cshtml" />
-    <Content Include="Views\Home\ProcessSummaryReport2.cshtml" />
+    <Content Include="Views\Reporting\ProcessSummaryReport.cshtml" />
+    <Content Include="Views\Reporting\ProcessBills.cshtml" />
+    <Content Include="Views\Reporting\ProcessSummaryReport2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Billing\" />
     <Folder Include="Views\Cataloging\" />
-    <Folder Include="Views\Reporting\" />
     <Folder Include="Views\Sales\" />
     <Folder Include="Views\Testing\" />
   </ItemGroup>

@@ -11,14 +11,14 @@ namespace NorthwestLabs.Models
     public class Payment
     {
         [Key]
-        public int payID; 
+        public int payID { get; set; }
 
         [ForeignKey("Cus_ID")]
         public virtual int cusID { get; set; }
         public virtual Customer customer { get; set; }
 
-        public DateTime date; 
-        public Double amount;
+        public DateTime date { get; set; }
+        public Double amount { get; set; }
  
         //add methods here
     }

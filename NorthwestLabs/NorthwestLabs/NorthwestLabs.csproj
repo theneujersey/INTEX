@@ -311,12 +311,12 @@
     <Content Include="Views\Reporting\ProcessSummaryReport.cshtml" />
     <Content Include="Views\Reporting\ProcessBills.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport2.cshtml" />
+    <Content Include="Views\Sales\CreateWorkOrder.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Billing\" />
     <Folder Include="Views\Cataloging\" />
-    <Folder Include="Views\Sales\" />
     <Folder Include="Views\Testing\" />
   </ItemGroup>
   <ItemGroup>

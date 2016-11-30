@@ -11,14 +11,15 @@ namespace NorthwestLabs.Models
     public class TestTube
     {
         [Key]
-        public int ttNumber; 
-        public int concentration; 
-        public String quantitativeResult; 
-        public String qualitativeResult; 
-        public Double customDiscount; 
-        public int actualHours; 
-        public String comments; 
-        public Double charge;
+        public int ttNumber { get; set; } 
+        public int concentration { get; set; } 
+        public String quantitativeResult { get; set; } 
+        public String qualitativeResult { get; set; } 
+        public Double customDiscount { get; set; } 
+        public int actualHours { get; set; } 
+        public String comments { get; set; } 
+        public Double charge { get; set; }
+        public String status { get; set; }
 
         [ForeignKey("Sample_ID")]
         public virtual int sampleID { get; set; }

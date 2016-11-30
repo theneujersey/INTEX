@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "RunAssays4";
+}
+
+<h2>Today's Assays</h2>
+
+<!-- In the real system, these would be displayed from the database -->
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <h2>Today's Assays</h2>
+
+        <p>This page shows a list of all current assays.</p>
+
+        <table class="table">
+            <tr>
+                <th>Select</th>
+                <th>Assay Number</th>
+                <th>Assay Type</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>1</td>
+                <td>Biochemical Pharmacology (BP)</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>2</td>
+                <td>Biochemical Pharmacology (BP)</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>3</td>
+                <td>DiscoveryScreen (DS)</td>
+                <td>Scheduled</td>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>4</td>
+                <td>ImmunoScreen (IS)</td>
+                <td>Scheduled</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>5</td>
+                <td>Biochemical Pharmacology (BP)</td>
+                <td>In Progress</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>6</td>
+                <td>ProfilingScreen (PF)</td>
+                <td>Scheduled</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>7</td>
+                <td>CustomScreen (CS)</td>
+                <td>Scheduled</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>8</td>
+                <td>ProfilingScreen (PF)</td>
+                <td>Scheduled</td>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>9</td>
+                <td>DiscoveryScreen (DS)</td>
+                <td>Scheduled</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" /></td>
+                <td>10</td>
+                <td>PharmaScreen (PS)</td>
+                <td>Scheduled</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 float_right">
+        <!-- On the real system, these would trigger a status update on the database test tube table status column -->
+        <!-- Stays on this page because this is just a prototype -->
+        @Html.ActionLink("Complete", "RunAssays4", "Testing", new { @class = "btn btn-primary complete" })
+        <!-- Stays on this page because this is just a prototype -->
+        @Html.ActionLink("Begin", "RunAssays4", "Testing", new { @class = "btn btn-primary begin" })
+    </div>
+</div>
+

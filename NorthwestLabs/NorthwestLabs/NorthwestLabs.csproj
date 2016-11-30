@@ -189,6 +189,7 @@
     <Compile Include="Models\Test.cs" />
     <Compile Include="Models\TestDetails.cs" />
     <Compile Include="Models\TestTube.cs" />
+    <Compile Include="Models\TestTubeSchedule.cs" />
     <Compile Include="Models\WorkOrder.cs" />
     <Compile Include="Models\WorkOrderDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -311,6 +312,10 @@
     <Content Include="Views\Home\ProcessSummaryReport.cshtml" />
     <Content Include="Views\Home\ProcessBills.cshtml" />
     <Content Include="Views\Home\ProcessSummaryReport2.cshtml" />
+    <Content Include="Views\Testing\RunAssays1.cshtml" />
+    <Content Include="Views\Testing\RunAssays2.cshtml" />
+    <Content Include="Views\Testing\RunAssays3.cshtml" />
+    <Content Include="Views\Testing\RunAssays4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -318,7 +323,6 @@
     <Folder Include="Views\Cataloging\" />
     <Folder Include="Views\Reporting\" />
     <Folder Include="Views\Sales\" />
-    <Folder Include="Views\Testing\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

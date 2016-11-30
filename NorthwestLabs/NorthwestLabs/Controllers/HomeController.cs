@@ -13,10 +13,6 @@ namespace NorthwestLabs.Controllers
             return View();
         }
 
-        public ActionResult WorkOrder()
-        {
-            return View();
-        }
 
         public ActionResult About()
         {

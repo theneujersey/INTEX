@@ -11,9 +11,9 @@ namespace NorthwestLabs.Models
     public class Employee:Person
     {
         [Key]
-        public int empID; 
-        public String jobFunction; 
-        public String hourlyWage; 
+        public int empID { get; set; }
+        public String jobFunction { get; set; }
+        public String hourlyWage { get; set; }
 
         //methods
         public Employee checkEmployeeInfo(String firstName, String lastName)

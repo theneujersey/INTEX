@@ -11,10 +11,10 @@ namespace NorthwestLabs.Models
     public class Materials
     {
         [Key]
-        public int matID; 
-        public String materialName; 
-        public int inventory; 
-        public Double cost; 
+        public int matID { get; set; }
+        public String materialName { get; set; }
+        public int inventory { get; set; }
+        public Double cost { get; set; }
 
         //methods
         public void adjustInventory(String sMaterialName, int iNewInventory)

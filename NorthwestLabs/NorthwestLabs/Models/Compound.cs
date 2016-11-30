@@ -11,7 +11,7 @@ namespace NorthwestLabs.Models
     public class Compound
     {
         [Key]
-        public int ltNumber; 
-        public String name; 
+        public int ltNumber { get; set; }
+        public String name { get; set; }
     }
 }

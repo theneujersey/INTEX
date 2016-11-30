@@ -13,16 +13,16 @@ namespace NorthwestLabs.Models
     {
         //attributes
         [Key]
-        public int empID;
+        public int empID { get; set; }
         public virtual Employee employee { get; set; }
 
         [Key]
-        public int ttNumber;
+        public int ttNumber { get; set; }
         public virtual TestTube testTube { get; set; }
 
-        public DateTime startDate; 
-        public DateTime completionEstimatedDate; 
-        public DateTime completionActualDate; 
+        public DateTime startDate { get; set; }
+        public DateTime completionEstimatedDate { get; set; }
+        public DateTime completionActualDate { get; set; }
 
 
         //methods

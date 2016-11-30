@@ -11,10 +11,10 @@ namespace NorthwestLabs.Models
     public class Customer:Person
     {
         [Key]
-        public int cusID; 
-        public String companyName; 
-        public String fax; 
-        public int paymentAccountCode;
+        public int cusID { get; set; }
+        public String companyName { get; set; }
+        public String fax { get; set; }
+        public int paymentAccountCode { get; set; }
 
         [ForeignKey("Dis_ID")]
         public virtual int discountID { get; set; }

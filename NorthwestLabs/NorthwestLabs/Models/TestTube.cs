@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -13,10 +14,13 @@ namespace NorthwestLabs.Models
         [Key]
         public int ttNumber; 
         public int concentration; 
-        public String quantitativeResult; 
-        public String qualitativeResult; 
+        [DisplayName("Quantitative Result File")]
+        public String quantitativeResult;
+        [DisplayName("Qualitative Result File")]
+        public String qualitativeResult;
         public Double customDiscount; 
-        public int actualHours; 
+        public int actualHours;
+        [DisplayName("Comments")]
         public String comments; 
         public Double charge;
 

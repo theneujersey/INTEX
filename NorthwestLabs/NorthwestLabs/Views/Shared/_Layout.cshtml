@@ -148,7 +148,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#billing"><i class="fa fa-fw fa-dollar"></i> Billing <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="billing" class="collapse">
                             <li>
-                                <a href="#">Process Bills</a>
+                                @Html.ActionLink("Process Bills", "ProcessBills", "Reporting")
                             </li>
                         </ul>
                     </li>
@@ -167,7 +167,7 @@
                                 <a href="#">Process Data Reports</a>
                             </li>
                             <li>
-                                <a href="#">Process Summary Reports</a>
+                                @Html.ActionLink("Process Summary Reports", "ProcessSummaryReport", "Reporting")
                             </li>
                         </ul>
                     </li>

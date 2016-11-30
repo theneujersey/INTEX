@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace NorthwestLabs.Models
 {
+    [Table("Employee")]
     public class Employee:Person
     {
+        [Key]
         public int empID; 
         public String jobFunction; 
         public String hourlyWage; 

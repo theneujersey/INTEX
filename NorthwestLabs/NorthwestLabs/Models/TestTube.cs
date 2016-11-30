@@ -17,7 +17,7 @@ namespace NorthwestLabs.Models
         public Double charge; 
 
         //  methods 
-        public void enterAllCharges(int TTNumber[], Double Amount[])
+        public void enterAllCharges(int[] TTNumber, Double[] Amount)
         {
             //method code here
         }

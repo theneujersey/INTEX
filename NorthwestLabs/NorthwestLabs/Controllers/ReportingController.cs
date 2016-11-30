@@ -14,6 +14,11 @@ namespace NorthwestLabs.Controllers
             return View();
         }
 
+        public ActionResult ProcessBills2()
+        {
+            return View();
+        }
+
         public ActionResult ProcessSummaryReport()
         {
             List<SelectListItem> workorder = new List<SelectListItem>();

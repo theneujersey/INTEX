@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "ProcessSummaryReport";
+}
+
+<h2>Summary Report</h2>
+
+
+
+@using (Html.BeginForm("ProcessSummaryReport2", "Home", FormMethod.Get))
+{
+    <fieldset>
+        <h4>Select a work order that you want to work with</h4>
+        @Html.DropDownList("WorkOrder", null, new { id = "DropDownList" })
+        <input class="WorkOrderButton" type="submit" value="Choose" />
+    </fieldset>
+}

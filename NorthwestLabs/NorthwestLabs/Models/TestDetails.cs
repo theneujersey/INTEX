@@ -13,7 +13,7 @@ namespace NorthwestLabs.Models
 
         public Materials materials { get; set; }
         public Test test { get; set; }
-        public double quantity;
+        public double quantity { get; set; }
 
         //methods go here
     }

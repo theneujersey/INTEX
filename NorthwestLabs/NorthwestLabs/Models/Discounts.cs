@@ -14,8 +14,8 @@ namespace NorthwestLabs.Models
        
         //stores discount rates for certain volumes of orders
         [Key]
-        public int discountID; 
-        public int minimumVolume; 
-        public Double discountFactor; 
+        public int discountID { get; set; }
+        public int minimumVolume { get; set; }
+        public Double discountFactor { get; set; }
     }
 }

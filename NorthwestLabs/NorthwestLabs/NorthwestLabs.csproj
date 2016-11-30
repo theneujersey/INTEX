@@ -312,6 +312,7 @@
     <Content Include="Views\Reporting\ProcessSummaryReport.cshtml" />
     <Content Include="Views\Reporting\ProcessBills.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport2.cshtml" />
+    <Content Include="Views\Sales\CreateWorkOrder.cshtml" />
     <Content Include="Views\Reporting\ProcessBills2.cshtml" />
     <Content Include="Views\Reporting\processbills3.cshtml" />
     <Content Include="Views\Home\ProcessSummaryReport.cshtml" />
@@ -326,9 +327,9 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Billing\" />
     <Folder Include="Views\Cataloging\" />
+    <Folder Include="Views\Testing\" />
     <Folder Include="Views\Reporting\" />
     <Folder Include="Views\Sales\" />
-    <Folder Include="Views\Testing\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

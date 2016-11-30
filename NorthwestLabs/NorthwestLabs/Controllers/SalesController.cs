@@ -9,7 +9,7 @@ namespace NorthwestLabs.Controllers
     public class SalesController : Controller
     {
         // GET: Sales
-        public ActionResult Index()
+        public ActionResult CreateWorkOrder()
         {
             return View();
         }

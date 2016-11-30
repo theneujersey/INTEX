@@ -13,6 +13,6 @@ namespace NorthwestLabs.Models
         public Assay assay { get; set; }
         public Test test { get; set; }
 
-        public String condition;
+        public String condition { get; set; }
     }
 }

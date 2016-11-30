@@ -12,7 +12,7 @@ namespace NorthwestLabs.Models
     public class Assay
     {
         [Key]
-        public int assayID; 
-        public String assayName; 
+        public int assayID { get; set; }
+        public String assayName { get; set; }
     }
 }

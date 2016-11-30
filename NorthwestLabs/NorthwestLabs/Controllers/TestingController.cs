@@ -13,5 +13,25 @@ namespace NorthwestLabs.Controllers
         {
             return View();
         }
+
+        public ActionResult RunAssays1()
+        {
+            return View();
+        }
+
+        public ActionResult RunAssays2()
+        {
+            return View();
+        }
+
+        public ActionResult RunAssays3()
+        {
+            return View();
+        }
+
+        public ActionResult RunAssays4()
+        {
+            return View();
+        }
     }
 }

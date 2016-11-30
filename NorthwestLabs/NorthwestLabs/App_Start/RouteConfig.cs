@@ -18,11 +18,7 @@ namespace NorthwestLabs
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-            routes.MapRoute(
-                name: "Reporting",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Reporting", action = "ProcessBills2", id = UrlParameter.Optional }
-            );
+            
         }
     }
 }

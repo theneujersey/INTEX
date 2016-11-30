@@ -309,14 +309,17 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport.cshtml" />
-    <Content Include="Views\Reporting\ProcessBills.cshtml" />
+    <Content Include="Views\Billing\ProcessBills.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport2.cshtml" />
-    <Content Include="Views\Reporting\ProcessBills2.cshtml" />
-    <Content Include="Views\Reporting\processbills3.cshtml" />
+    <Content Include="Views\Billing\ProcessBills2.cshtml" />
+    <Content Include="Views\Billing\ProcessBills3.cshtml" />
+    <Content Include="Views\Billing\ProcessBills4.cshtml" />
+    <Content Include="Views\Billing\ProcessBills5.cshtml" />
+    <Content Include="Views\Billing\ProcessBills6.cshtml" />
+    <Content Include="Views\Billing\ProcessBills7.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Billing\" />
     <Folder Include="Views\Cataloging\" />
     <Folder Include="Views\Sales\" />
     <Folder Include="Views\Testing\" />

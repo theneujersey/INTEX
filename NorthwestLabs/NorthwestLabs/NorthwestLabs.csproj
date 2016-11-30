@@ -311,7 +311,12 @@
     <Content Include="Views\Reporting\ProcessSummaryReport.cshtml" />
     <Content Include="Views\Reporting\ProcessBills.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport2.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Sales\CreateWorkOrder.cshtml" />
+=======
+    <Content Include="Views\Reporting\ProcessBills2.cshtml" />
+    <Content Include="Views\Reporting\processbills3.cshtml" />
+>>>>>>> refs/remotes/origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

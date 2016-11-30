@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ProcessBills";
+}
+
+<h2>ProcessBills</h2>
+
+<div class="form-group">
+    <label>Enter the test tube number </label>
+    <input class="form-control" placeholder="Enter the number">
+    <label>Enter all charges of the work order </label>
+    <input class="form-control" placeholder="Enter charges">
+    
+</div>
+@Html.ActionLink("Submit", "ProcessBills2", null, new { @class = "btn btn-primary btn-md" })

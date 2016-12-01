@@ -11,13 +11,13 @@ namespace NorthwestLabs.Models
     public class LiteratureReference
     {
         [Key]
-        public int litID; 
+        public int litID { get; set; }
 
         [ForeignKey("Assay_ID")]
         public virtual int assayID { get; set; }
         public virtual Assay assay { get; set; }
 
-        public String reference; 
+        public String reference { get; set; }
 
         //methods
     }

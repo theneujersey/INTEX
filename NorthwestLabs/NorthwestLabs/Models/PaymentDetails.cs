@@ -11,8 +11,8 @@ namespace NorthwestLabs.Models
     {
         //linking class associates payments (or portions therof) to a work order
         public Payment payment { get; set; }
-        public WorkOrder workOrder { get; set; } 
+        public WorkOrder workOrder { get; set; }
 
-        public Double payPortion; 
+        public Double payPortion { get; set; }
     }
 }

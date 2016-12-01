@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -11,18 +12,23 @@ namespace NorthwestLabs.Models
     public class WorkOrder
     {
         [Key]
-        public int woID;
-        public String comments; 
-        public String priority; 
-        public DateTime completionDueDate; 
-        public DateTime completionEstimatedDate; 
-        public DateTime completionActualDate; 
-        public Boolean discountVerified; 
-        public Boolean invoiceVerified; 
-        public DateTime invoiceSentDate; 
-        public DateTime payDueDate; 
-        public DateTime payEarlyDate; 
-        public Double payEarlyDiscount;
+        public int woID { get; set; }
+        [Required]
+        public String comments { get; set; } 
+        public String priority { get; set; }
+
+        [Required]
+        [DataType(DataType.Date)]
+        [DisplayName("Requested Due Date")]
+        public DateTime completionDueDate { get; set; }
+        public DateTime completionEstimatedDate { get; set; } 
+        public DateTime completionActualDate { get; set; } 
+        public Boolean discountVerified { get; set; } 
+        public Boolean invoiceVerified { get; set; } 
+        public DateTime invoiceSentDate { get; set; } 
+        public DateTime payDueDate { get; set; } 
+        public DateTime payEarlyDate { get; set; } 
+        public Double payEarlyDiscount { get; set; }
 
         [ForeignKey("Emp_ID")]
         public virtual int empID { get; set; }

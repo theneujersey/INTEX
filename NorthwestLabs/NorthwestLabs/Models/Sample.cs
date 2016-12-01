@@ -11,16 +11,16 @@ namespace NorthwestLabs.Models
     public class Sample
     {
         [Key]
-        public int sampleID; 
-        public int compoundSequenceCode; 
-        public DateTime arrivedDate; 
-        public DateTime confirmationDate; 
-        public String appearance; 
-        public Double quantitiy; 
-        public Double molecularMass; 
-        public Double customerWeight; 
-        public Double actualWeight; 
-        public Double maximumToleratedDose;
+        public int sampleID { get; set; } 
+        public int compoundSequenceCode { get; set; } 
+        public DateTime arrivedDate { get; set; } 
+        public DateTime confirmationDate { get; set; } 
+        public String appearance { get; set; } 
+        public Double quantitiy { get; set; } 
+        public Double molecularMass { get; set; } 
+        public Double customerWeight { get; set; } 
+        public Double actualWeight { get; set; } 
+        public Double maximumToleratedDose { get; set; }
 
         [ForeignKey("Emp_ID")]
         public virtual int empID { get; set; }

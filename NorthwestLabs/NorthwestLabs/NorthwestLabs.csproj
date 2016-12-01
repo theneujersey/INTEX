@@ -189,6 +189,7 @@
     <Compile Include="Models\Test.cs" />
     <Compile Include="Models\TestDetails.cs" />
     <Compile Include="Models\TestTube.cs" />
+    <Compile Include="Models\TestTubeSchedule.cs" />
     <Compile Include="Models\WorkOrder.cs" />
     <Compile Include="Models\WorkOrderDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

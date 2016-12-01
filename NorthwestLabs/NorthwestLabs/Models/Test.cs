@@ -11,11 +11,11 @@ namespace NorthwestLabs.Models
     public class Test
     {
         [Key]
-        public String testID; 
-        public String testName; 
-        public String protocol; 
-        public Double estimatedHours; 
-        public Double basePrice; 
+        public String testID { get; set; } 
+        public String testName { get; set; } 
+        public String protocol { get; set; } 
+        public Double estimatedHours { get; set; } 
+        public Double basePrice { get; set; } 
 
         //methods go here
 

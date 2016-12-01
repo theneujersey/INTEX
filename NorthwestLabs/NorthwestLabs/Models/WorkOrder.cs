@@ -12,8 +12,8 @@ namespace NorthwestLabs.Models
     public class WorkOrder
     {
         [Key]
+        [DisplayName("Work Order Number")]
         public int woID { get; set; }
-        [Required]
         public String comments { get; set; } 
         public String priority { get; set; }
 

@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Northwest Labs</a>
+                <a class="navbar-brand" href="~/Home/Index">Northwest Labs</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -151,7 +151,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#billing"><i class="fa fa-fw fa-dollar"></i> Billing <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="billing" class="collapse">
                             <li>
-                                @Html.ActionLink("Process Bills", "ProcessBills", "Reporting")
+                                @Html.ActionLink("Process Bills", "ProcessBills", "Billing")
                             </li>
                         </ul>
                     </li>
@@ -167,7 +167,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#reporting"><i class="fa fa-fw fa-desktop"></i> Reporting <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="reporting" class="collapse">
                             <li>
-                                <a href="#">Process Data Reports</a>
+                                @Html.ActionLink("Process Data Reports", "ProcessDataReport", "Reporting")                          
                             </li>
                             <li>
                                 @Html.ActionLink("Process Summary Reports", "ProcessSummaryReport", "Reporting")
@@ -185,17 +185,17 @@
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#testing"><i class="fa fa-fw fa-filter"></i> Testing <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="testing" class="collapse">
-                            <li>
+                            <li>                               
                                 <a href="#">Receive Compound</a>
                             </li>
                             <li>
-                                <a href="#">Schedule Assays</a>
+                                @Html.ActionLink("Schedule Assays", "ScheduleAssays1", "Testing")
                             </li>
                             <li>
                                 <a href="#">Solubilize, Prepare, and Dispense Compound</a>
                             </li>
                             <li>
-                                <a href="#">Run Assays</a>
+                                @Html.ActionLink("Run Assays", "RunAssays1", "Testing")
                             </li>
                         </ul>
                     </li>

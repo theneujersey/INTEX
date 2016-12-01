@@ -10,7 +10,7 @@
 @using (Html.BeginForm("ProcessSummaryReport2", "Reporting", FormMethod.Get))
 {
     <fieldset>
-        <h4>Select a work order that you want to work with</h4>
+        <h4>Select a work order that you want to work with for summary report.</h4>
         @Html.DropDownList("WorkOrder", null, new { id = "DropDownList" })
         <input class="WorkOrderButton" type="submit" value="Choose" />
     </fieldset>

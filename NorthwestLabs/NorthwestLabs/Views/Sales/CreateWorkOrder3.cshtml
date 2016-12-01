@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Create Work Order";
+}
+
+<h2>Finalize Order</h2>
+
+Please review the order details:
+<br /><br />
+<table>
+    <tr>
+        <th style="width:200px;">Compound Samples</th>
+        <th style="width:200px;">Assays</th>
+        <th style="Width:200px;">Estimated Cost</th>
+    </tr>
+    <tr>
+        <td>Sample 1</td>
+        <td>Assay Option 1</td>
+        <td>$$</td>
+    </tr>
+    <tr>
+        <td>Sample 2</td>
+        <td>Assay Option 5</td>
+        <td>$$</td>
+    </tr>
+    <tr>
+        <td>Sample 3</td>
+        <td>Assay Option 2</td>
+        <td>$$</td>
+    </tr>
+</table>
+<br />
+@Html.ActionLink("Edit", "CreateWorkOrder2", null, new { @class = "btn btn-primary" })
+@Html.ActionLink("Finalize", "CreateWorkOrder4", null, new { @class="btn btn-primary"})
+

@@ -34,6 +34,10 @@ namespace NorthwestLabs.Models
         public virtual int comID { get; set; }
         public virtual Compound compound { get; set; }
 
+        [ForeignKey("Assay_ID")]
+        public virtual int assayID { get; set; }
+        public virtual Assay assay { get; set; }
+
         //add methods here
     }
 }

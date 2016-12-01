@@ -7,11 +7,11 @@
 
 
 
-@using (Html.BeginForm("ProcessSummaryReport2", "Reporting", FormMethod.Get))
-{
-    <fieldset>
-        <h4>Select a work order that you want to work with for summary report.</h4>
-        @Html.DropDownList("WorkOrder", null, new { id = "DropDownList" })
-        <input class="WorkOrderButton" type="submit" value="Choose" />
-    </fieldset>
-}
+<div class="form-group">
+    <label>Enter the work order number </label>
+    <input class="form-control" placeholder="Enter the number">
+
+
+</div>
+@Html.ActionLink("Create Report", "ProcessSummaryReport2", null, new { @class = "btn btn-primary btn-md" })</p>
+

@@ -39,3 +39,8 @@ textarea {
     float: right;
     margin-right: 10px;
 }
+
+/* css class to turn button gray */
+.gray_button {
+    background-color: #929192;
+}

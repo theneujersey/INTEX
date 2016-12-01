@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace NorthwestLabs.Models
         public virtual TestTube testTube { get; set; }
 
         public DateTime startDate { get; set; }
+        [DisplayName("Estimated Completion Date")]
         public DateTime completionEstimatedDate { get; set; }
         public DateTime completionActualDate { get; set; }
 

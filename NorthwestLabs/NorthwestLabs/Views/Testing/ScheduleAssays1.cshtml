@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "ScheduleAssays1";
+}
+
+<!-- In the real system, the download button would actually download a list of unscheduled assay tests -->
+
+<h2>Schedule Assays</h2>
+
+<p>Click the button below to download the excel file of unscheduled assay tests.</p>
+
+@Html.ActionLink("Download", "ScheduleAssays2", "Testing", new { @class = "btn btn-primary" })
+
+@Html.ActionLink("Skip Dowload", "ScheduleAssays2", "Testing", new { @class = "btn btn-primary gray_button" })
+
+

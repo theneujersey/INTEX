@@ -332,6 +332,7 @@
     <Content Include="Views\Testing\ScheduleAssays1.cshtml" />
     <Content Include="Views\Testing\ScheduleAssays2.cshtml" />
     <Content Include="Views\Testing\ScheduleAssays3.cshtml" />
+    <Content Include="Views\Testing\Solubilize1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

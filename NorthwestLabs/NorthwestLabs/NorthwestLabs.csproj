@@ -337,10 +337,16 @@
     <Content Include="Views\Reporting\ProcessDataReport2.cshtml" />
     <Content Include="Views\Reporting\ProcessDataReport3.cshtml" />
     <Content Include="Views\Reporting\ProcessDataReport4.cshtml" />
+    <Content Include="Views\Reporting\ProcessSummaryReport3.cshtml" />
+    <Content Include="Views\Reporting\ProcessSummaryReport4.cshtml" />
+    <Content Include="Views\Sales\CreateWorkOrder2.cshtml" />
+    <Content Include="Views\Sales\CreateWorkOrder3.cshtml" />
+    <Content Include="Views\Sales\CreateWorkOrder4.cshtml" />
     <Content Include="Views\Cataloging\MaintainCatalog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\" />
     <Folder Include="Views\Cataloging\" />
     <Folder Include="Views\Sales\" />
     <Folder Include="Views\Testing\" />

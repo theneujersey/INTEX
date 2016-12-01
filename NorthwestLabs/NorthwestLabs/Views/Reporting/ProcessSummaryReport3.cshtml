@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "ProcessSummaryReport3";
+}
+
+<h2>Summary Report</h2>
+
+<h4>The summary report is successfully saved as a PDF file in the customer’s folder on the network drive. And It is updated into the system.</h4>
+<p>Do you want to print the summary report?</p>
+@Html.ActionLink("Yes", "ProcessSummaryReport4", null, new { @class = "btn btn-primary btn-md" })
+@Html.ActionLink("Print Later", "ProcessSummaryReport4", null, new { @class = "btn btn-primary gray_button" })
+

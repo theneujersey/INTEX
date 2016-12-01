@@ -27,42 +27,36 @@ namespace NorthwestLabs.Controllers
             return View();
         }
 
-        public ViewResult ProcessSummaryReport2(string WorkOrder)
+        public ViewResult ProcessSummaryReport2()
         {
-            if (WorkOrder.Equals("0"))
-            {
-
-            }
-
-            else if (WorkOrder.Equals("1"))
-            {
-
-            }
-            else if (WorkOrder.Equals("2"))
-            {
-
-            }
-
-
-            else
-                ViewBag.messageString = "Other";
-
-
-
             return View();
         }
+
+        public ViewResult ProcessSummaryReport3()
+        {
+            return View();
+        }
+
+        public ActionResult ProcessSummaryReport4()
+        {
+            return View();
+        }
+
         public ActionResult ProcessDataReport()
         {
             return View();
         }
+
         public ActionResult ProcessDataReport2()
         {
             return View();
         }
+
         public ActionResult ProcessDataReport3()
         {
             return View();
         }
+
         public ActionResult ProcessDataReport4()
         {
             return View();

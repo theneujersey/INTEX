@@ -5,14 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
+
 namespace NorthwestLabs.Models
 {
-    [Table("Compound")]
-    public class Compound
+    public class CustomerPayment
     {
-        [Key]
-        public int ltNumber { get; set; }
-        [Required]
-        public String name { get; set; }
+        public Customer customer { get; set; }
+        public Payment payment { get; set; }
     }
 }

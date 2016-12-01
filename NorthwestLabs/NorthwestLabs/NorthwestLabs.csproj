@@ -353,7 +353,7 @@
     <Folder Include="Views\Sales\" />
     <Folder Include="Views\Testing\" />
     <Folder Include="Views\Billing\" />
-   <Folder Include="Views\Reporting\" />
+    <Folder Include="Views\Reporting\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

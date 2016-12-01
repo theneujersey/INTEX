@@ -22,10 +22,11 @@ select,
 textarea {
     max-width: 280px;
 }
-
+/* tok this out because it was making our forms weird
 .form-group {
     width: 250px;
 }
+*/ 
 
 /* css class for complete button on run arrays */
 .complete {
@@ -38,6 +39,15 @@ textarea {
 .begin {
     float: right;
     margin-right: 10px;
+}
+
+.height{
+    height:25px;
+}
+
+/*Override height of white portion on screen*/
+#page-wrapper{
+    min-height:500px;
 }
 
 /* css class to turn button gray */

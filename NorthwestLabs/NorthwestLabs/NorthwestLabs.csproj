@@ -175,6 +175,7 @@
     <Compile Include="Models\AssayDetails.cs" />
     <Compile Include="Models\Compound.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerPayment.cs" />
     <Compile Include="Models\Discounts.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -342,6 +343,7 @@
     <Content Include="Views\Sales\CreateWorkOrder2.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder3.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder4.cshtml" />
+    <Content Include="Views\Reporting\ProcessSummaryReport5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

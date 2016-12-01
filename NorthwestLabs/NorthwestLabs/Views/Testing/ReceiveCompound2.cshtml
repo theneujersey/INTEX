@@ -1,0 +1,77 @@
+﻿@model NorthwestLabs.Models.Sample
+
+@{
+    ViewBag.Title = "ReceiveCompound2";
+}
+
+<h2>Receive Compound - Enter Samples</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.appearance , htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.appearance)
+                @Html.ValidationMessageFor(model => model.appearance)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.quantity) <span> mg</span>
+                @Html.ValidationMessageFor(model => model.quantity)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.molecularMass, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.molecularMass) <span> g/mol</span>
+                @Html.ValidationMessageFor(model => model.molecularMass)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.customerWeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.customerWeight) <span> mg</span>
+                @Html.ValidationMessageFor(model => model.customerWeight)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.actualWeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.actualWeight) <span> mg</span>
+                @Html.ValidationMessageFor(model => model.actualWeight)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.maximumToleratedDose, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.maximumToleratedDose) <span> mg</span>
+                @Html.ValidationMessageFor(model => model.maximumToleratedDose)
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-md-2">
+                @Html.ActionLink("Add Another Sample", "ReceiveCompound2", null, new { @class="btn btn-primary"})
+            </div>
+            <div class="col-md-2">
+                @Html.ActionLink("End of Samples", "ReceiveCompound3", null, new { @class = "btn btn-primary" })
+            </div>
+        </div>
+    </div>
+
+
+}

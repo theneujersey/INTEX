@@ -343,6 +343,9 @@
     <Content Include="Views\Sales\CreateWorkOrder2.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder3.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder4.cshtml" />
+    <Content Include="Views\Testing\ReceiveCompound1.cshtml" />
+    <Content Include="Views\Testing\ReceiveCompound2.cshtml" />
+    <Content Include="Views\Testing\ReceiveCompound3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

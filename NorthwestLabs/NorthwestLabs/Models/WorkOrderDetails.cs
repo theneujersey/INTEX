@@ -9,8 +9,8 @@ namespace NorthwestLabs.Models
     [Table("Work_Order_Details")]
     public class WorkOrderDetails
     {
-        //linking class associates work orders with their details
-        public WorkOrder workOrder { get; set; }
+        //linking class associates a work order's samlples with their assays
+        public Sample sample { get; set; }
         public Assay assay { get; set; }
     }
 }

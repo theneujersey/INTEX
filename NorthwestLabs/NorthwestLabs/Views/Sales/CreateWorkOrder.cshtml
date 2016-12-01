@@ -1,42 +1,41 @@
 ﻿@model NorthwestLabs.Models.WorkOrder
 
 @{
-    ViewBag.Title = "CreateWorkOrder";
+    ViewBag.Title = "Create Work Order";
 }
 
     <h2>Create New Work Order</h2>
-    <div class = "row">
+
         @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken()
 
             <div class="form-horizontal">
                 @Html.ValidationSummary(true)
-                <div class="form-group">
-                    @Html.LabelFor(model => model.comments , htmlAttributes: new { @class = "control-label col-md-2" })
+
+                <div class="form-group row">
+                   @Html.LabelFor(model => model.comments, htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.EditorFor(model => model.comments)
                         @Html.ValidationMessageFor(model => model.comments)
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group row">
                     @Html.LabelFor(model => model.priority, htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
-                        @Html.EditorFor(model => model.priority)
-                        @Html.DropDownList("Priority",new List<SelectListItem>
+                        @Html.DropDownList("Priority", new List<SelectListItem>
                         {
                           new SelectListItem{ Text = "", Value = "none" },
                           new SelectListItem{ Text = "Low", Value = "low" },
                           new SelectListItem{ Text = "Medium", Value = "medium" },
                           new SelectListItem{ Text = "High", Value = "high" }
-                        })
-
+                        }, new { @class="height"})
                         @Html.ValidationMessageFor(model => model.priority)
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group row">
                     @Html.LabelFor(model => model.completionDueDate , htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.EditorFor(model => model.completionDueDate)
@@ -44,17 +43,12 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group row">
                     <div class="col-md-offset-2 col-md-10">
                         <input type="submit" value="Create" class="btn btn-default" />
                     </div>
                 </div>
             </div>
+
+
         }
-
-    </div>
-
-
-
-
-

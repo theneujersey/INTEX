@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     @*@Styles.Render("~/Content/css")*@
     @*@Scripts.Render("~/bundles/modernizr")*@
     
@@ -20,6 +20,8 @@
 
     <!-- Custom Site.css-->
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css"/>
+
+    <title>Northwest Labs - @ViewBag.Title</title>
 
 </head>
 <body>
@@ -50,10 +52,10 @@
                                     </span>
                                     <div class="media-body">
                                         <h5 class="media-heading">
-                                            <strong>John Smith</strong>
+                                            <strong>Taylor McDonald</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Today at 9:15 AM</p>
+                                        <p>Hey Rebecca, I emailed you the data summary report in the morning. Please verify that you get it!</p>
                                     </div>
                                 </div>
                             </a>
@@ -66,10 +68,10 @@
                                     </span>
                                     <div class="media-body">
                                         <h5 class="media-heading">
-                                            <strong>John Smith</strong>
+                                            <strong>Jill Water</strong>
                                         </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 1:32 PM</p>
+                                        <p>Hey Rebecca, can you call me back when you see this message? Thanks.</p>
                                     </div>
                                 </div>
                             </a>
@@ -82,10 +84,10 @@
                                     </span>
                                     <div class="media-body">
                                         <h5 class="media-heading">
-                                            <strong>John Smith</strong>
+                                            <strong>Taylor McDonald</strong>
                                         </h5>
                                         <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                        <p>Hey Rebecca, sorry about late reply. I will send you the summary report as soon as possible.</p>
                                     </div>
                                 </div>
                             </a>
@@ -123,7 +125,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Rebecca Share <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -210,12 +212,75 @@
 
                 @RenderBody()  
 
+                
             </div>
             <!-- /.container-fluid -->
-
+            
         </div>
         <!-- /#page-wrapper -->
+        <hr />
+        <footer class="footer-distributed">
 
+        <div class="footer-left">
+
+            <h3>Northwest<span> Labs</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">About Us</a>
+                ·
+                <a href="#">Contact Us</a>
+                ·
+                <a href="#">Legal</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#">Privacy</a>
+            </p>
+
+            <p class="footer-company-name">Northwest Labs &copy; 2016</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>320 Westlake Ave N</span> Seattle, WA 98109</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 206 123 4567</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Northwest Labs Pharmaceutical provides chemical and compound tests for companies needing
+                in-depth assay analysis.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+        </footer>
     </div>
     
 

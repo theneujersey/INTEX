@@ -337,15 +337,15 @@
     <Content Include="Views\Reporting\ProcessDataReport2.cshtml" />
     <Content Include="Views\Reporting\ProcessDataReport3.cshtml" />
     <Content Include="Views\Reporting\ProcessDataReport4.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Cataloging\MaintainCatalog.cshtml" />
+=======
     <Content Include="Views\Reporting\ProcessSummaryReport3.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport4.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder2.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder3.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder4.cshtml" />
-    <Content Include="Views\Testing\ReceiveCompound1.cshtml" />
-    <Content Include="Views\Testing\ReceiveCompound2.cshtml" />
-    <Content Include="Views\Testing\ReceiveCompound3.cshtml" />
+>>>>>>> refs/remotes/origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

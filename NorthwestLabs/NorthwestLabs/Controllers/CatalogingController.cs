@@ -13,5 +13,10 @@ namespace NorthwestLabs.Controllers
         {
             return View();
         }
+
+        public ActionResult MaintainCatalog()
+        {
+            return View();
+        }
     }
 }

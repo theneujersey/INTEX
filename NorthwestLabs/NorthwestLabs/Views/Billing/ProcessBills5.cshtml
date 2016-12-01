@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "ProcessBills5";
+}
+
+<h2>ProcessBills</h2>
+@using (Html.BeginForm("ProcessBills6", "Billing", new {id = 0},FormMethod.Get))
+
+{
+    <div class="form-group">
+    <label>Does the customer have multiple work orders?</label>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Yes
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">No
+        </label>
+    </div>
+    <input class="SubmitButton" type="submit" value="Choose" />
+</div>
+    }

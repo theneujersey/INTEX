@@ -51,5 +51,21 @@ namespace NorthwestLabs.Controllers
 
             return View();
         }
+        public ActionResult ProcessDataReport()
+        {
+            return View();
+        }
+        public ActionResult ProcessDataReport2()
+        {
+            return View();
+        }
+        public ActionResult ProcessDataReport3()
+        {
+            return View();
+        }
+        public ActionResult ProcessDataReport4()
+        {
+            return View();
+        }
     }
 }

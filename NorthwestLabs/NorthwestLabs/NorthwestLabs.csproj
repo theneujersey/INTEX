@@ -319,24 +319,23 @@
     <Content Include="Views\Billing\ProcessBills6.cshtml" />
     <Content Include="Views\Billing\ProcessBills7.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder.cshtml" />
-   <Content Include="Views\Reporting\ProcessBills2.cshtml" />
-   <Content Include="Views\Reporting\processbills3.cshtml" />
-   <Content Include="Views\Home\ProcessSummaryReport.cshtml" />
-   <Content Include="Views\Home\ProcessBills.cshtml" />
-   <Content Include="Views\Home\ProcessSummaryReport2.cshtml" />
-   <Content Include="Views\Testing\RunAssays1.cshtml" />
-   <Content Include="Views\Testing\RunAssays2.cshtml" />
-   <Content Include="Views\Testing\RunAssays3.cshtml" />
-   <Content Include="Views\Testing\RunAssays4.cshtml" />
+    <Content Include="Views\Reporting\ProcessBills2.cshtml" />
+    <Content Include="Views\Reporting\processbills3.cshtml" />
+    <Content Include="Views\Home\ProcessSummaryReport.cshtml" />
+    <Content Include="Views\Home\ProcessBills.cshtml" />
+    <Content Include="Views\Home\ProcessSummaryReport2.cshtml" />
+    <Content Include="Views\Testing\RunAssays1.cshtml" />
+    <Content Include="Views\Testing\RunAssays2.cshtml" />
+    <Content Include="Views\Testing\RunAssays3.cshtml" />
+    <Content Include="Views\Testing\RunAssays4.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport2.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport3.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Cataloging\" />
-    <Folder Include="Views\Sales\" />    
-    <Folder Include="Views\Testing\" />
-    <Folder Include="Views\Billing\" />
-    <Folder Include="Views\Reporting\" />
-    
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

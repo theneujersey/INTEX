@@ -332,14 +332,19 @@
     <Content Include="Views\Testing\ScheduleAssays1.cshtml" />
     <Content Include="Views\Testing\ScheduleAssays2.cshtml" />
     <Content Include="Views\Testing\ScheduleAssays3.cshtml" />
+    <Content Include="Views\Testing\Solubilize1.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport2.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport3.cshtml" />
+    <Content Include="Views\Reporting\ProcessDataReport4.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Cataloging\" />
-    <Folder Include="Views\Sales\" />
-    <Folder Include="Views\Testing\" />
-    <Folder Include="Views\Billing\" />
-    <Folder Include="Views\Reporting\" />
+    <Folder Include="Views\Sales\" />    		
+    <Folder Include="Views\Testing\" />		
+    <Folder Include="Views\Billing\" />		
+    <Folder Include="Views\Reporting\" />		    
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -19,7 +19,7 @@ namespace NorthwestLabs.Models
 
         [Required]
         [DataType(DataType.Date)]
-        [DisplayName("Requested Due Date")]
+        [DisplayName("requested due date")]
         public DateTime completionDueDate { get; set; }
         public DateTime completionEstimatedDate { get; set; } 
         public DateTime completionActualDate { get; set; } 

@@ -337,7 +337,6 @@
     <Content Include="Views\Reporting\ProcessDataReport2.cshtml" />
     <Content Include="Views\Reporting\ProcessDataReport3.cshtml" />
     <Content Include="Views\Reporting\ProcessDataReport4.cshtml" />
-    <Content Include="Views\Cataloging\MaintainCatalog.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport3.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport4.cshtml" />
     <Content Include="Views\Sales\CreateWorkOrder2.cshtml" />

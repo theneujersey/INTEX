@@ -346,6 +346,11 @@
     <Content Include="Views\Testing\ReceiveCompound1.cshtml" />
     <Content Include="Views\Testing\ReceiveCompound2.cshtml" />
     <Content Include="Views\Testing\ReceiveCompound3.cshtml" />
+    <Content Include="Views\Cataloging\MaintainCatalog2.cshtml" />
+    <Content Include="Views\Cataloging\MaintainCatalog1.cshtml" />
+    <Content Include="Views\Cataloging\MaintainCatalog3.cshtml" />
+    <Content Include="Views\Testing\Solubilize.cshtml" />
+    <Content Include="Views\Testing\Solubilize2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

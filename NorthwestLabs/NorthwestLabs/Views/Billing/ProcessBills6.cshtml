@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "ProcessBills6";
+}
+
+<h2>ProcessBills6</h2>
+
+@ViewBag.Message
+<br /><br />
+<p>Invocice Information</p>
+<table class="table">
+    <tr>
+        <th>
+            Payment Due
+        </th>
+        <th>
+            Early Payment Date
+        </th>
+        <th>
+            Discount for early payment
+        </th>
+
+    </tr>
+
+
+    <tr>
+        <td>
+            2016-12-31
+        </td>
+        <td>
+            2016-12-21
+        </td>
+        <td>
+            10% of discount will be provided.
+        </td>
+
+
+    </tr>
+
+    <tr>
+        <td>
+            2017-01-10
+        </td>
+        <td>
+            2016-12-31
+        </td>
+        <td>
+            11% of discount will be provided.
+        </td>
+
+
+    </tr>
+
+
+</table>
+@Html.ActionLink("Send invoices", "ProcessBills7", null, new { @class = "btn btn-primary btn-md" })

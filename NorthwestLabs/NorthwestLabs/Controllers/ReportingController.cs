@@ -9,16 +9,12 @@ namespace NorthwestLabs.Controllers
     public class ReportingController : Controller
     {
         // GET: Reporting
-        public ActionResult ProcessBills()
+       
+
+        public ActionResult ProcessBills7()
         {
             return View();
         }
-
-        public ActionResult ProcessBills2()
-        {
-            return View();
-        }
-
         public ActionResult ProcessSummaryReport()
         {
             List<SelectListItem> workorder = new List<SelectListItem>();

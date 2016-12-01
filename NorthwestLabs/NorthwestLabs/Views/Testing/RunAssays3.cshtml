@@ -18,21 +18,19 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.testTube.quantitativeResult , htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.testTube.quantitativeResult)
-                    @Html.ValidationMessageFor(model => model.testTube.quantitativeResult)
+                    <input type="file" />
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(model => model.testTube.qualitativeResult, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.testTube.qualitativeResult)
-                    @Html.ValidationMessageFor(model => model.testTube.qualitativeResult)
+                    <input type="file" />
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(model => model.testTube.comments, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @Html.EditorFor(model => model.testTube.comments)
+                    @Html.TextAreaFor(model => model.testTube.comments)
                     @Html.ValidationMessageFor(model => model.testTube.comments)
                 </div>
             </div>

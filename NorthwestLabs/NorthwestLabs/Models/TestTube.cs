@@ -12,6 +12,7 @@ namespace NorthwestLabs.Models
     public class TestTube
     {
         [Key]
+        [DisplayName("Test Tube Number")]
         public int ttNumber { get; set; }
         public int concentration { get; set; }
         [DisplayName("Quantitative Result File")]

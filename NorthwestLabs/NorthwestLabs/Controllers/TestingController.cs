@@ -33,5 +33,34 @@ namespace NorthwestLabs.Controllers
         {
             return View();
         }
+
+        public ActionResult ScheduleAssays1()
+        {
+            return View();
+        }
+
+        public ActionResult ScheduleAssays2()
+        {
+            return View();
+        }
+
+        public ActionResult ScheduleAssays3()
+        {
+            return View();
+        }
+
+        public ActionResult ScheduleAssays1()
+        {
+            return View();
+
+        public ActionResult ScheduleAssays2()
+        {
+            return View();
+        }
+
+        public ActionResult ScheduleAssays3()
+        {
+            return View();
+        }
     }
 }

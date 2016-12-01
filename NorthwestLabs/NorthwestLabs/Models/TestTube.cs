@@ -12,17 +12,17 @@ namespace NorthwestLabs.Models
     public class TestTube
     {
         [Key]
-        public int ttNumber; 
-        public int concentration; 
+        public int ttNumber { get; set; }
+        public int concentration { get; set; }
         [DisplayName("Quantitative Result File")]
-        public String quantitativeResult;
+        public String quantitativeResult { get; set; }
         [DisplayName("Qualitative Result File")]
-        public String qualitativeResult;
-        public Double customDiscount; 
-        public int actualHours;
+        public String qualitativeResult { get; set; }
+        public Double customDiscount { get; set; }
+        public int actualHours { get; set; }
         [DisplayName("Comments")]
-        public String comments; 
-        public Double charge;
+        public String comments { get; set; }
+        public Double charge { get; set; }
 
         [ForeignKey("Sample_ID")]
         public virtual int sampleID { get; set; }

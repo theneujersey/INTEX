@@ -12,6 +12,7 @@ namespace NorthwestLabs.Models
     {
         [Key]
         public int ltNumber { get; set; }
+        [Required]
         public String name { get; set; }
     }
 }

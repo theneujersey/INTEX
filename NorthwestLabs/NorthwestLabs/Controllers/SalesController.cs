@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NorthwestLabs.Models;
 
 namespace NorthwestLabs.Controllers
 {
@@ -15,7 +16,8 @@ namespace NorthwestLabs.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateWorkOrder(FormCollection form)
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateWorkOrder(WorkOrder workOrder)
         {
             if (ModelState.IsValid)
             {
@@ -23,7 +25,7 @@ namespace NorthwestLabs.Controllers
             }
             else
             {
-                return View();
+                return View(workOrder);
             }
             
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -11,15 +12,17 @@ namespace NorthwestLabs.Models
     public class TestTube
     {
         [Key]
-        public int ttNumber { get; set; } 
-        public int concentration { get; set; } 
-        public String quantitativeResult { get; set; } 
-        public String qualitativeResult { get; set; } 
-        public Double customDiscount { get; set; } 
-        public int actualHours { get; set; } 
-        public String comments { get; set; } 
-        public Double charge { get; set; }
-        public String status { get; set; }
+        public int ttNumber; 
+        public int concentration; 
+        [DisplayName("Quantitative Result File")]
+        public String quantitativeResult;
+        [DisplayName("Qualitative Result File")]
+        public String qualitativeResult;
+        public Double customDiscount; 
+        public int actualHours;
+        [DisplayName("Comments")]
+        public String comments; 
+        public Double charge;
 
         [ForeignKey("Sample_ID")]
         public virtual int sampleID { get; set; }

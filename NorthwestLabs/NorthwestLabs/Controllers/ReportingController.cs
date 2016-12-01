@@ -29,6 +29,7 @@ namespace NorthwestLabs.Controllers
 
         public ViewResult ProcessSummaryReport2()
         {
+            ViewBag.Confirmation = "The data report is successfully created. This will be notified to Seattle reporting department.";
             return View();
         }
 
@@ -38,6 +39,11 @@ namespace NorthwestLabs.Controllers
         }
 
         public ActionResult ProcessSummaryReport4()
+        {
+            return View();
+        }
+
+        public ActionResult ProcessSummaryReport5()
         {
             return View();
         }

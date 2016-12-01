@@ -1,4 +1,5 @@
-﻿
+﻿@model NorthwestLabs.Models.CustomerPayment
+
 @{
     ViewBag.Title = "ProcessBills3";
 }
@@ -7,11 +8,37 @@
 
 <p>Enter Customer Payment</p>
 
-<div class="form-group">
-    <label>Enter the customer ID </label>
-    <input class="form-control" placeholder="Enter ID">
-    <label>Enter the amount of payment </label>
-    <input class="form-control" placeholder="Enter amount of payment">
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-</div>
-@Html.ActionLink("Submit", "ProcessBills4", null, new { @class = "btn btn-primary btn-md" })
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.customer.cusID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.customer.cusID)
+                @Html.ValidationMessageFor(model => model.customer.cusID)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.payment.amount, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.payment.amount)
+                @Html.ValidationMessageFor(model => model.payment.amount)
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Submit", "ProcessBills4", null, new { @class = "btn btn-primary btn-md" })
+            </div>
+        </div>
+    </div>
+
+
+}

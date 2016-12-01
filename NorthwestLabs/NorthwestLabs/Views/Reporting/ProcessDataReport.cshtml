@@ -1,15 +1,34 @@
-﻿
+﻿@model NorthwestLabs.Models.WorkOrder
+
 @{
     ViewBag.Title = "ProcessDataReport";
 }
 
 <h2>Process Data Report</h2>
 
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
 
-<div class="form-group">
-    <label>Enter the work order number </label>
-    <input class="form-control" placeholder="Enter the number">
-    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
 
-</div>
-@Html.ActionLink("Create Report","ProcessDataReport2" , null, new { @class = "btn btn-primary btn-md" })</p>
+        <div class="form-group row">
+            @Html.LabelFor(model => model.woID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.woID)
+                @Html.ValidationMessageFor(model => model.woID)
+            </div>
+        </div>
+
+        
+
+        <div class="form-group row">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Create Report", "ProcessDataReport2", null, new { @class = "btn btn-primary btn-md" })
+            </div>
+        </div>
+    </div>
+
+
+}

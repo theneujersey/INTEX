@@ -353,6 +353,7 @@
     <Content Include="Views\Testing\Solubilize2.cshtml" />
     <Content Include="Views\Reporting\ProcessSummaryReport5.cshtml" />
     <Content Include="Views\Cataloging\MaintainCatalog.cshtml" />
+    <Content Include="Views\Home\Review.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

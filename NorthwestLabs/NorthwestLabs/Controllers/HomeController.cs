@@ -12,6 +12,10 @@ namespace NorthwestLabs.Controllers
         {
             return View();
         }
+        public ActionResult Review()
+        {
+            return View();
+        }
 
 
         public ActionResult About()

@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="~/Home/Index">Northwest Labs</a>
+                <a class="navbar-brand" href="~/Home/Index"><span class="fa fa-compass"></span> Northwest Labs</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -147,7 +147,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        @Html.ActionLink("Dashboard", "Index", "Home")
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#billing"><i class="fa fa-fw fa-dollar"></i> Billing <i class="fa fa-fw fa-caret-down"></i></a>
@@ -161,7 +161,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#cataloging"><i class="fa fa-fw fa-book"></i> Cataloging <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="cataloging" class="collapse">
                             <li>
-                                <a href="#">Maintain and Publish Catalog</a>
+                                @Html.ActionLink("Maintain and Publish Catalog", "MaintainCatalog", "Cataloging")
                             </li>
                         </ul>
                     </li>
@@ -180,7 +180,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#sales"><i class="fa fa-fw fa-line-chart"></i> Sales <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="sales" class="collapse">
                             <li>
-                                <a href="#">Maintain Work Orders</a>
+                                @Html.ActionLink("Create a Work Order", "CreateWorkOrder", "Sales")
                             </li>
                         </ul>
                     </li>
@@ -188,13 +188,13 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#testing"><i class="fa fa-fw fa-filter"></i> Testing <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="testing" class="collapse">
                             <li>                               
-                                <a href="#">Receive Compound</a>
+                                @Html.ActionLink("Receive Compound", "ReceiveCompound1", "Testing")
                             </li>
                             <li>
                                 @Html.ActionLink("Schedule Assays", "ScheduleAssays1", "Testing")
                             </li>
                             <li>
-                                <a href="#">Solubilize, Prepare, and Dispense Compound</a>
+                                @Html.ActionLink("Solubulize", "Solubulize1", "Testing")
                             </li>
                             <li>
                                 @Html.ActionLink("Run Assays", "RunAssays1", "Testing")

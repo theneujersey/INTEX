@@ -13,6 +13,7 @@ namespace NorthwestLabs.Controllers
         {
             return View();
         }
+        // These are views for 'Process Bills' menu.
         public ActionResult ProcessBills()
         {
             return View();
@@ -38,16 +39,8 @@ namespace NorthwestLabs.Controllers
             return View();
         }
 
-        public ActionResult ProcessBills6(int id)
+        public ActionResult ProcessBills6()
         {
-            if (id == 0)
-            {
-                ViewBag.Message = "The customer has multiple work orders, so multiple invoices will be required.";
-            }
-            else
-            {
-                ViewBag.Message = "Nothing";
-            }
             return View();
         }
 

@@ -14,12 +14,14 @@ namespace NorthwestLabs.Models
         [Key]
         [DisplayName("Work Order Number")]
         public int woID { get; set; }
-        public String comments { get; set; } 
+        [DisplayName("Comments")]
+        public String comments { get; set; }
+        [DisplayName("Priority")]
         public String priority { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
-        [DisplayName("requested due date")]
+        [DisplayName("Requested Due Date")]
         public DateTime completionDueDate { get; set; }
         public DateTime completionEstimatedDate { get; set; } 
         public DateTime completionActualDate { get; set; } 

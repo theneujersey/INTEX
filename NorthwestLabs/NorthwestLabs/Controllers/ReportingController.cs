@@ -9,21 +9,9 @@ namespace NorthwestLabs.Controllers
     public class ReportingController : Controller
     {
         // GET: Reporting
-       
-
-        public ActionResult ProcessBills7()
-        {
-            return View();
-        }
+        // These are views for 'Process Summary Report' menu.
         public ActionResult ProcessSummaryReport()
         {
-            List<SelectListItem> workorder = new List<SelectListItem>();
-            workorder.Add(new SelectListItem { Text = "Work Order 1", Value = "0" });
-            workorder.Add(new SelectListItem { Text = "Work Order 2", Value = "1" });
-            workorder.Add(new SelectListItem { Text = "Work Order 3", Value = "2" });
-            ViewBag.WorkOrder = workorder;
-
-
             return View();
         }
 
@@ -48,6 +36,7 @@ namespace NorthwestLabs.Controllers
             return View();
         }
 
+        // These are views for 'Process Data Report' menu.
         public ActionResult ProcessDataReport()
         {
             return View();

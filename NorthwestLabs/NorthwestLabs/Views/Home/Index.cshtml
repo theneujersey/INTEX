@@ -18,25 +18,29 @@
 
 <div class="row">
     <div class="box col-lg-5">
-        <h2>Your schedule</h2>
+        <h2>Work Orders</h2>
         <table class="table">
             <tr>
-                <th>Task Name</th>
-                <th>Due</th>
+                <th>Work Orders</th>
+                <th>Due Date</th>
             </tr>
             <tr class="danger">
-                <td>Enter day's compounds</td>
+                <td>@Html.ActionLink("#57814, "Review", "Home", null, new { @class="bold"})</td>
+                <td>ABC Company</td>
                 <td>12/2/16</td>
             <tr class="warning">
-                <td>Run a batch of tests</td>
+                <td>@Html.ActionLink("#5783", "Review", "Home", null, new { @class = "bold" })</td>
+                <td>Acme Co.</td>
                 <td>12/3/16</td>
             </tr>
             <tr class="success">
-                <td>Attend a meeting</td>
+                <td>@Html.ActionLink("#57812", "Review", "Home", null, new { @class = "bold" })</td>
+                <td>Company Ltd.</td>
                 <td>12/4/16</td>
             </tr>
             <tr class ="success">
-                <td>Weekly Review</td>
+                <td>@Html.ActionLink("#57811", "Review", "Home", null, new { @class = "bold" })</td>
+                <td>XYZ Company</td>
                 <td>12/5/16</td>
             </tr>
         </table>

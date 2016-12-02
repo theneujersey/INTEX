@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace NorthwestLabs.Models
         public virtual Customer customer { get; set; }
 
         public DateTime date { get; set; }
+        [DisplayName("Amount of payment")]
         public Double amount { get; set; }
  
         //add methods here

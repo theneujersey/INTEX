@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "ReceiveCompound3";
+}
+
+<h2>Receive Compound</h2>
+
+<p>Do you have another Compound to add?</p>
+<div class="row">
+    <div class="col-md-1">
+        @Html.ActionLink("Yes", "ReceiveCompound1", null, new { @class="btn btn-primary"})
+    </div>
+    <div class="col-md-1">
+        @Html.ActionLink("No", "Index", "Home", null, new { @class="btn btn-primary"})
+    </div>
+</div>
+

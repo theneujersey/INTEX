@@ -78,5 +78,20 @@ namespace NorthwestLabs.Controllers
         {
             return View();
         }
+
+        public ActionResult Solubilize()
+        {
+            return View();
+        }
+
+        public ActionResult Solubilize1()
+        {
+            return View();
+        }
+
+        public ActionResult Solubilize2()
+        {
+            return View();
+        }
     }
 }

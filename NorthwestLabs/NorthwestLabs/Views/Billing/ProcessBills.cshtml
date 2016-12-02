@@ -1,15 +1,42 @@
-﻿
+﻿@model NorthwestLabs.Models.TestTube
 @{
     ViewBag.Title = "ProcessBills";
 }
 
-<h2>ProcessBills</h2>
+<h2>Process Bills</h2>
 
-<div class="form-group">
-    <label>Enter the test tube number </label>
-    <input class="form-control" placeholder="Enter the number">
-    <label>Enter all charges of the work order </label>
-    <input class="form-control" placeholder="Enter charges">
-    
-</div>
-@Html.ActionLink("Submit", "ProcessBills2", null, new { @class = "btn btn-primary btn-md" })
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.ttNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ttNumber)
+                @Html.ValidationMessageFor(model => model.ttNumber)
+            </div>
+        </div>
+
+        <div class="form-group row">
+            @Html.LabelFor(model => model.charge, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.charge)
+                @Html.ValidationMessageFor(model => model.charge)
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <div class="col-md-offset-2 col-md-10">
+                   @Html.ActionLink("Submit", "ProcessBills2", null, new { @class = "btn btn-primary btn-md" })
+            </div>
+        </div>
+    </div>
+
+
+}
+

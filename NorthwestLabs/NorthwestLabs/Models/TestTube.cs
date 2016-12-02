@@ -23,6 +23,7 @@ namespace NorthwestLabs.Models
         public int actualHours { get; set; }
         [DisplayName("Comments")]
         public String comments { get; set; }
+        [DisplayName("Charge")]
         public Double charge { get; set; }
 
         [ForeignKey("Sample_ID")]

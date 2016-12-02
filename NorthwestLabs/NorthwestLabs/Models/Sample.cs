@@ -16,15 +16,17 @@ namespace NorthwestLabs.Models
         public int compoundSequenceCode { get; set; } 
         public DateTime arrivedDate { get; set; } 
         public DateTime confirmationDate { get; set; } 
-        public String appearance { get; set; } 
+        [DisplayName("Appearance")]
+        public String appearance { get; set; }
+        [DisplayName("Quantity")]
         public Double quantity { get; set; } 
-        [DisplayName("molecular mass")]
+        [DisplayName("Molecular Mass")]
         public Double molecularMass { get; set; }
-        [DisplayName("customer weight")]
+        [DisplayName("Customer Weight")]
         public Double customerWeight { get; set; }
-        [DisplayName("actual weight")]
+        [DisplayName("Actual Weight")]
         public Double actualWeight { get; set; }
-        [DisplayName("maximum tolerated dose")]
+        [DisplayName("Maximum Tolerated Dose")]
         public Double maximumToleratedDose { get; set; }
 
         [ForeignKey("Emp_ID")]

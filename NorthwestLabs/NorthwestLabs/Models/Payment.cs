@@ -19,7 +19,7 @@ namespace NorthwestLabs.Models
         public virtual Customer customer { get; set; }
 
         public DateTime date { get; set; }
-        [DisplayName("Amount of payment")]
+        [DisplayName("Amount of Payment")]
         public Double amount { get; set; }
  
         //add methods here
